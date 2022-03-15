@@ -15,7 +15,7 @@ function App() {
       .then((res) => res.json())
       .then((data) => {
         //console.log(data);
-        setRawData(JSON.stringify(data), null, 2);
+        setRawData(JSON.stringify(data));
         setNameArray(data.results);
         console.log(nameArray);
       });
